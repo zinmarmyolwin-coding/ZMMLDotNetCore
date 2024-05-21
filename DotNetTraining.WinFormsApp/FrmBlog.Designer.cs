@@ -28,24 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnClick = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtTitle = new TextBox();
+            txtAuthor = new TextBox();
+            txtContent = new TextBox();
+            btnCancel = new Button();
+            btnSave = new Button();
             SuspendLayout();
-            // 
-            // btnClick
-            // 
-            btnClick.Location = new Point(385, 231);
-            btnClick.Name = "btnClick";
-            btnClick.Size = new Size(75, 23);
-            btnClick.TabIndex = 0;
-            btnClick.Text = "Click";
-            btnClick.UseVisualStyleBackColor = true;
-            btnClick.Click += btnClick_Click;
             // 
             // label1
             // 
@@ -76,40 +67,65 @@
             label3.Text = "Content :";
             label3.TextAlign = ContentAlignment.BottomLeft;
             // 
-            // textBox1
+            // txtTitle
             // 
-            textBox1.Location = new Point(319, 36);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(202, 25);
-            textBox1.TabIndex = 4;
+            txtTitle.Location = new Point(319, 36);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(202, 25);
+            txtTitle.TabIndex = 4;
             // 
-            // textBox2
+            // txtAuthor
             // 
-            textBox2.Location = new Point(319, 77);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(202, 25);
-            textBox2.TabIndex = 5;
+            txtAuthor.Location = new Point(319, 77);
+            txtAuthor.Name = "txtAuthor";
+            txtAuthor.Size = new Size(202, 25);
+            txtAuthor.TabIndex = 5;
             // 
-            // textBox3
+            // txtContent
             // 
-            textBox3.Location = new Point(319, 120);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(202, 69);
-            textBox3.TabIndex = 6;
+            txtContent.Location = new Point(319, 120);
+            txtContent.Multiline = true;
+            txtContent.Name = "txtContent";
+            txtContent.Size = new Size(202, 69);
+            txtContent.TabIndex = 6;
+            // 
+            // btnCancel
+            // 
+            btnCancel.BackColor = SystemColors.ActiveCaption;
+            btnCancel.Location = new Point(319, 212);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 32);
+            btnCancel.TabIndex = 7;
+            btnCancel.Text = "C&ancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
+            // 
+            // btnSave
+            // 
+            btnSave.BackColor = Color.FromArgb(27, 94, 32);
+            btnSave.ForeColor = Color.Black;
+            btnSave.Location = new Point(411, 212);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(75, 32);
+            btnSave.TabIndex = 8;
+            btnSave.Text = "&Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // Test
             // 
             AutoScaleDimensions = new SizeF(6F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.HighlightText;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnSave);
+            Controls.Add(btnCancel);
+            Controls.Add(txtContent);
+            Controls.Add(txtAuthor);
+            Controls.Add(txtTitle);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btnClick);
             ForeColor = SystemColors.ActiveCaptionText;
             Name = "Test";
             StartPosition = FormStartPosition.CenterScreen;
@@ -119,13 +135,13 @@
         }
 
         #endregion
-
-        private Button btnClick;
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtTitle;
+        private TextBox txtAuthor;
+        private TextBox txtContent;
+        private Button btnCancel;
+        private Button btnSave;
     }
 }

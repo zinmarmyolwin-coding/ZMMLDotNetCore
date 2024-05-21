@@ -17,9 +17,17 @@ namespace DotNetTraining.WinFormsApp
             InitializeComponent();
         }
 
-        private void btnClick_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World");
+            txtTitle.Clear();
+            txtAuthor.Clear();
+            txtContent.Clear();
+            txtTitle.Focus();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
