@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34818.151
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.ConsoleApp", "ZMMLDotNetCore.ConsoleApp\ZMMLDotNetCore.ConsoleApp.csproj", "{CF43CD06-4139-469B-B11E-CCC4D1CDA2DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTraining.WinFormsApp", "DotNetTraining.WinFormsApp\DotNetTraining.WinFormsApp.csproj", "{CA983064-450C-4F4F-94B3-BB41A5AF9570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTraining.WinFormsApp", "DotNetTraining.WinFormsApp\DotNetTraining.WinFormsApp.csproj", "{CA983064-450C-4F4F-94B3-BB41A5AF9570}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
