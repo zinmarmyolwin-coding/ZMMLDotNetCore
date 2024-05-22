@@ -51,7 +51,6 @@ namespace DotNetTraining.WinFormsApp
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex?.Message);
             }
         }

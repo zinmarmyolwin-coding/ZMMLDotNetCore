@@ -11,11 +11,11 @@ namespace DotNetTraining.WinFormsApp
     {
         public static SqlConnectionStringBuilder connectionString = new SqlConnectionStringBuilder()
         {
-            DataSource = "",
-            InitialCatalog = "",
-            UserID = "",
-            Password = "",
-            TrustServerCertificate = true,
+            DataSource = "DESKTOP-4QQ0V13\\SQLEXPRESS",
+            InitialCatalog = "TestingDb",
+            //UserID = "",
+            //Password = "",
+            //TrustServerCertificate = true,
         };
             
     }
