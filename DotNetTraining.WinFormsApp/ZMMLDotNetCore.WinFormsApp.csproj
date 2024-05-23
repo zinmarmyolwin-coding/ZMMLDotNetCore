@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNetTraining.Shared\DotNetTraining.Shared.csproj" />
+    <ProjectReference Include="..\DotNetTraining.Shared\ZMMLDotNetCore.Shared.csproj" />
   </ItemGroup>
 
 </Project>

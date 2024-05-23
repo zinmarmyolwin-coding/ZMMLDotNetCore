@@ -5,9 +5,9 @@ VisualStudioVersion = 17.10.34818.151
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.ConsoleApp", "ZMMLDotNetCore.ConsoleApp\ZMMLDotNetCore.ConsoleApp.csproj", "{CF43CD06-4139-469B-B11E-CCC4D1CDA2DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTraining.WinFormsApp", "DotNetTraining.WinFormsApp\DotNetTraining.WinFormsApp.csproj", "{CA983064-450C-4F4F-94B3-BB41A5AF9570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.WinFormsApp", "DotNetTraining.WinFormsApp\ZMMLDotNetCore.WinFormsApp.csproj", "{CA983064-450C-4F4F-94B3-BB41A5AF9570}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetTraining.Shared", "DotNetTraining.Shared\DotNetTraining.Shared.csproj", "{C219367C-963E-47E4-BB4D-518E044E0E8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.Shared", "DotNetTraining.Shared\ZMMLDotNetCore.Shared.csproj", "{C219367C-963E-47E4-BB4D-518E044E0E8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
