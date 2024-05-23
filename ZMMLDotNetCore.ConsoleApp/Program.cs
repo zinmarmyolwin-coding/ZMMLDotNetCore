@@ -7,10 +7,11 @@ using System.Reflection;
 Console.WriteLine("Hello, World!");
 
 SqlConnectionStringBuilder stringBuilder = new SqlConnectionStringBuilder();
-stringBuilder.DataSource = "DESKTOP-VIHB44D\\SQLEXPRESS1";
-stringBuilder.InitialCatalog = "DotNetTraining";
+stringBuilder.DataSource = ".";
+stringBuilder.InitialCatalog = "DotNetTraning";
 stringBuilder.UserID = "sa";
 stringBuilder.Password = "sa@123";
+stringBuilder.TrustServerCertificate = true;
 
 SqlConnection sqlConnection = new SqlConnection(stringBuilder.ConnectionString);
 sqlConnection.Open();
@@ -28,9 +29,9 @@ sqlConnection.Close();
 foreach (DataRow dr in dt.Rows)
 {
     Console.WriteLine("Blog Id => " + dr["BlogId"]);
-    Console.WriteLine("Blog Title => " + dr["BlogTitle"]);
-    Console.WriteLine("Blog Author => " + dr["BlogAuthor"]);
-    Console.WriteLine("Blog Content => " + dr["BlogContent"]);
+    Console.WriteLine("Blog Title => " + dr["Title"]);
+    Console.WriteLine("Blog Author => " + dr["Author"]);
+    Console.WriteLine("Blog Content => " + dr["Content"]);
     Console.WriteLine("--------------------------------------");
 }
 Console.ReadKey();
