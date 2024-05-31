@@ -15,7 +15,7 @@ namespace ZMMLDotNetCore.ConsoleAppHttpClient
     public class HttpClintExample
     {
         private readonly HttpClient _clinet = new HttpClient() { BaseAddress = new Uri("https://localhost:7068") };
-        private readonly string _endPoint = "api/blogdapper";
+        private readonly string _endPoint = "api/blog";
 
         public async Task RunAsync()
         {
