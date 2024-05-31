@@ -23,7 +23,7 @@ namespace ZMMLDotNetCore.ConsoleApp.DapperExamples
         {
             using IDbConnection db = new SqlConnection(ConnectionStrings.connectionString.ConnectionString);
             db.Open();
-            List<BlogModel> model = db.Query<BlogModel>("select * from BlogTable").ToList();
+            List<BlogModel> model = db.Query<BlogModel>("select * from Tbl_Blog").ToList();
             foreach (BlogModel item in model)
             {
                 Console.WriteLine($"BlogID : {item.BlogId}");
@@ -44,7 +44,7 @@ namespace ZMMLDotNetCore.ConsoleApp.DapperExamples
             };
             using IDbConnection db = new SqlConnection(ConnectionStrings.connectionString.ConnectionString);
             db.Open();
-            string query = @"INSERT INTO [dbo].[BlogTable]
+            string query = @"INSERT INTO [dbo].[Tbl_Blog]
            ([BlogTitle]
            ,[BlogAuthor]
            ,[BlogContent])
@@ -62,8 +62,8 @@ namespace ZMMLDotNetCore.ConsoleApp.DapperExamples
             IDbConnection db = new SqlConnection(ConnectionStrings.connectionString.ConnectionString);
             string message = string.Empty;
             db.Open();
-            //BlogModel? model = db.Query<BlogModel>("select * from BlogTable where BlogId=@BlogId ", id).FirstOrDefault(); // error scalar variable declear
-            BlogModel? model = db.Query<BlogModel>("select * from BlogTable where BlogId=@BlogId ", new BlogModel { BlogId = id })
+            //BlogModel? model = db.Query<BlogModel>("select * from Tbl_Blog where BlogId=@BlogId ", id).FirstOrDefault(); // error scalar variable declear
+            BlogModel? model = db.Query<BlogModel>("select * from Tbl_Blog where BlogId=@BlogId ", new BlogModel { BlogId = id })
                 .FirstOrDefault();
             if (model == null)
             {
@@ -88,7 +88,7 @@ namespace ZMMLDotNetCore.ConsoleApp.DapperExamples
             };
             using IDbConnection db = new SqlConnection(ConnectionStrings.connectionString.ConnectionString);
             db.Open();
-            string query = @"UPDATE [dbo].[BlogTable]
+            string query = @"UPDATE [dbo].[Tbl_Blog]
             SET [BlogTitle] = @BlogTitle
               ,[BlogAuthor] = @BlogAuthor
               ,[BlogContent] = @BlogContent
@@ -102,7 +102,7 @@ namespace ZMMLDotNetCore.ConsoleApp.DapperExamples
         {
             using IDbConnection db = new SqlConnection(ConnectionStrings.connectionString.ConnectionString);
             db.Open();
-            string query = @"DELETE FROM [dbo].[BlogTable]
+            string query = @"DELETE FROM [dbo].[Tbl_Blog]
                             WHERE BlogId = @BlogId";
             var result = db.Execute(query, new BlogModel { BlogId = id });
             string message = result > 0 ? "Delete successful" : "Delete fail.";

@@ -12,7 +12,7 @@ namespace ZMMLDotNetCore.Shared.ConnectionService
         public static SqlConnectionStringBuilder connectionString = new SqlConnectionStringBuilder()
         {
             DataSource = ".",
-            InitialCatalog = "DotNetTraining",
+            InitialCatalog = "DotNetTraning",
             UserID = "sa",
             Password = "sa@123",
             TrustServerCertificate = true,

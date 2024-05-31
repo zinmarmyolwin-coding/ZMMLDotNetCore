@@ -24,7 +24,7 @@ namespace ZMMLDotNetCore.ConsoleApp.AdoDotNetExamples
             connection.Open();
             Console.WriteLine("Connection.Open");
 
-            string query = "select * from BlogTable";
+            string query = "select * from Tbl_Blog";
             SqlCommand cmd = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -48,7 +48,7 @@ namespace ZMMLDotNetCore.ConsoleApp.AdoDotNetExamples
             SqlConnection connection = new SqlConnection(_stringBuilder.ConnectionString);
             connection.Open();
 
-            string query = @"INSERT INTO [dbo].[BlogTable]
+            string query = @"INSERT INTO [dbo].[Tbl_Blog]
            ([BlogTitle]
            ,[BlogAuthor]
            ,[BlogContent])
@@ -74,7 +74,7 @@ namespace ZMMLDotNetCore.ConsoleApp.AdoDotNetExamples
             SqlConnection connection = new SqlConnection(_stringBuilder.ConnectionString);
             connection.Open();
 
-            string query = @"UPDATE [dbo].[BlogTable]
+            string query = @"UPDATE [dbo].[Tbl_Blog]
             SET [BlogTitle] = @BlogTitle
               ,[BlogAuthor] = @BlogAuthor
               ,[BlogContent] = @BlogContent
@@ -99,7 +99,7 @@ namespace ZMMLDotNetCore.ConsoleApp.AdoDotNetExamples
             SqlConnection connection = new SqlConnection(_stringBuilder.ConnectionString);
             connection.Open();
 
-            string query = @"DELETE FROM [dbo].[BlogTable]
+            string query = @"DELETE FROM [dbo].[Tbl_Blog]
                             WHERE BlogId = @BlogId";
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogId", id);
@@ -116,7 +116,7 @@ namespace ZMMLDotNetCore.ConsoleApp.AdoDotNetExamples
             SqlConnection connection = new SqlConnection(_stringBuilder.ConnectionString);
             connection.Open();
 
-            string query = "select * from BlogTable where BlogId = @BlogId";
+            string query = "select * from Tbl_Blog where BlogId = @BlogId";
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogId", id);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);

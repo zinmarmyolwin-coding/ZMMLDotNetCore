@@ -1,19 +1,14 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 using Newtonsoft.Json;
-using DotNetTraining.Shared.Model;
+using ZMMLDotNetCore.Shared.ConnectionService;
+using ZMMLDotNetCore.Shared.Model;
 
 namespace ZMMLDotNetCore.Shared.Services;
 
 public class AdoDotNetService
 {
-    private readonly string _connectionString;
-
-    public AdoDotNetService(string connectionString)
-    {
-        _connectionString = connectionString;
-    }
-
+    string _connectionString = ConnectionStrings.connectionString.ConnectionString;
     public List<T> Query<T>(string query, params AdoDotNetParameterModel[]? parameters)
     {
         SqlConnection connection = new SqlConnection(_connectionString);
@@ -78,13 +73,24 @@ public class AdoDotNetService
         connection.Close();
         return result;
     }
-}
 
-public static class AdoDotNetParameterListExtension
-{
-    public static List<AdoDotNetParameterModel> Add(this List<AdoDotNetParameterModel> lst, string name, object value)
-    {
-        lst.Add(new AdoDotNetParameterModel(name, value));
-        return lst;
-    }
 }
+//public class AdoDotNetParamters
+//{
+//    public AdoDotNetParamters() { }
+//    public AdoDotNetParamters(string name, object value)
+//    {
+//        Name = name;
+//        Value = value;
+//    }
+//    public string Name { get; set; }
+//    public object Value { get; set; }
+//}
+//public static class AdoDotNetParameterListExtension
+//{
+//    public static List<AdoDotNetParameterModel> Add(this List<AdoDotNetParameterModel> lst, string name, object value)
+//    {
+//        lst.Add(new AdoDotNetParameterModel(name, value));
+//        return lst;
+//    }
+//}

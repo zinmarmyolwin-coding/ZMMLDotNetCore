@@ -1,17 +1,18 @@
 ﻿using Dapper;
 using System.Data;
 using System.Data.SqlClient;
+using ZMMLDotNetCore.Shared.ConnectionService;
 
 namespace ZMMLDotNetCore.Shared.Services
 {
     public class DapperService
     {
-        private readonly string _connectionString;
+        private readonly string _connectionString = ConnectionStrings.connectionString.ConnectionString;
 
-        public DapperService(string connectionString)
-        {
-            _connectionString = connectionString;
-        }
+        //public DapperService(string connectionString)
+        //{
+        //    _connectionString = connectionString;
+        //}
 
         public List<M> Query<M>(string query, object? param = null)
         {
