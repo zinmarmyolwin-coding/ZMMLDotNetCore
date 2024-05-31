@@ -1,6 +1,5 @@
 ﻿using DotNetTraining.WinFormsApp.Model;
 using DotNetTraining.WinFormsApp.Query;
-using DotNetTrainingBatch4.Shared;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZMMLDotNetCore.Shared.Services;
 
 namespace DotNetTraining.WinFormsApp
 {
