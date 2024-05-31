@@ -6,7 +6,7 @@ using ZMMLDotNetCore.Shared.Services;
 
 namespace ZMMLDotNetCore.RestApi.Controller
 {
-    [Route("api/[controller]")]
+    [Route("api/blog")]
     [ApiController]
     public class BlogDapperController : ControllerBase
     {
