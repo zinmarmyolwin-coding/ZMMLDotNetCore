@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 using ZMMLDotNetCore.Shared.Model;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace ZMMLDotNetCore.ConsNKKDotNetCore.RestApioleAppHttpClient
+namespace ZMMLDotNetCore.ConsoleAppHttpClient
 {
     public class HttpClintExample
     {
-        private readonly HttpClient _clinet = new HttpClient() { BaseAddress = new Uri("https://localhost:7295") };
-        private readonly string _endPoint = "api/blog";
+        private readonly HttpClient _clinet = new HttpClient() { BaseAddress = new Uri("https://localhost:7068") };
+        private readonly string _endPoint = "api/blogdapper";
 
         public async Task RunAsync()
         {
@@ -23,8 +23,8 @@ namespace ZMMLDotNetCore.ConsNKKDotNetCore.RestApioleAppHttpClient
             //Console.WriteLine();
 
             //Console.WriteLine("GetBy ID");
-            //await GetByIdAsync(2);
-            //Console.WriteLine();
+            await GetByIdAsync(2);
+            Console.WriteLine();
 
             //Console.WriteLine("Create");
             //await CreateAsync("HttpClient", "AAHttp", "AAContaent");
@@ -68,9 +68,9 @@ namespace ZMMLDotNetCore.ConsNKKDotNetCore.RestApioleAppHttpClient
         {
             BlogModel model = new BlogModel
             {
-               Title = title,
-               Author = author,
-               Content = content
+                Title = title,
+                Author = author,
+                Content = content
             };
             var jsonStr = JsonConvert.SerializeObject(model);
             HttpContent httpContent = new StringContent(jsonStr, Encoding.UTF8, Application.Json);
