@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.ConsoleAppRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.ConsoleAppRestClient", "ZMMLDotNetCore.ConsoleAppRestClient\ZMMLDotNetCore.ConsoleAppRestClient.csproj", "{B7E08200-13DC-44DA-8B40-BDBE316924E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.RestApiWithNLayer", "ZMMLDotNetCore.RestApiWithNLayer\ZMMLDotNetCore.RestApiWithNLayer.csproj", "{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B7E08200-13DC-44DA-8B40-BDBE316924E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7E08200-13DC-44DA-8B40-BDBE316924E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7E08200-13DC-44DA-8B40-BDBE316924E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
