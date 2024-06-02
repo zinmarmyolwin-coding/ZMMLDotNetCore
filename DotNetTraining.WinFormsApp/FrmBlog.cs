@@ -35,7 +35,7 @@ namespace DotNetTraining.WinFormsApp
             try
             {
                 string connectionStr = ConnectionString.connectionString.ToString();
-                DapperService dapperService = new DapperService(connectionStr);
+                DapperService dapperService = new DapperService();
 
                 BlogModel blogModel = new BlogModel()
                 {
