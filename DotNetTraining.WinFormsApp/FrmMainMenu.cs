@@ -14,7 +14,7 @@ namespace ZMMLDotNetCore.WinFormsApp
     public partial class FrmMainMenu : Form
     {
         public FrmMainMenu()
-        {
+  DotNetTrainingBatch4.WinFormsAppSqlInjection      {
             InitializeComponent();
         }
 
@@ -26,7 +26,8 @@ namespace ZMMLDotNetCore.WinFormsApp
 
         private void newBlogToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmBlogList frmBlogList = new FrmBlogList();
+            frmBlogList.ShowDialog();
         }
     }
 }

@@ -9,17 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.WinFormsApp"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.Shared", "DotNetTraining.Shared\ZMMLDotNetCore.Shared.csproj", "{C219367C-963E-47E4-BB4D-518E044E0E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.ConsoleAppHttpClient", "ZMMLDotNetCore.ConsoleAppHttpClient\ZMMLDotNetCore.ConsoleAppHttpClient.csproj", "{3BE6DCEF-7EAA-4259-9D95-D177A699814F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.ConsoleAppHttpClient", "ZMMLDotNetCore.ConsoleAppHttpClient\ZMMLDotNetCore.ConsoleAppHttpClient.csproj", "{3BE6DCEF-7EAA-4259-9D95-D177A699814F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.RestApi", "ZMMLDotNetCore.RestApi\ZMMLDotNetCore.RestApi.csproj", "{50775401-2055-40D0-BADD-A2AEE252FD1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.RestApi", "ZMMLDotNetCore.RestApi\ZMMLDotNetCore.RestApi.csproj", "{50775401-2055-40D0-BADD-A2AEE252FD1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.ConsoleAppRefitExample", "ZMMLDotNetCore.ConsoleAppRefitExample\ZMMLDotNetCore.ConsoleAppRefitExample.csproj", "{8A35402A-CD19-452A-8C1A-4339735CE738}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.ConsoleAppRefitExample", "ZMMLDotNetCore.ConsoleAppRefitExample\ZMMLDotNetCore.ConsoleAppRefitExample.csproj", "{8A35402A-CD19-452A-8C1A-4339735CE738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.ConsoleAppRestClient", "ZMMLDotNetCore.ConsoleAppRestClient\ZMMLDotNetCore.ConsoleAppRestClient.csproj", "{B7E08200-13DC-44DA-8B40-BDBE316924E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.ConsoleAppRestClient", "ZMMLDotNetCore.ConsoleAppRestClient\ZMMLDotNetCore.ConsoleAppRestClient.csproj", "{B7E08200-13DC-44DA-8B40-BDBE316924E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.RestApiWithNLayer", "ZMMLDotNetCore.RestApiWithNLayer\ZMMLDotNetCore.RestApiWithNLayer.csproj", "{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.RestApiWithNLayer", "ZMMLDotNetCore.RestApiWithNLayer\ZMMLDotNetCore.RestApiWithNLayer.csproj", "{F3772606-BE64-49E6-BF9F-F2E054B6FFCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.PizzaApi", "ZMMLDotNetCore.PizzaApi\ZMMLDotNetCore.PizzaApi.csproj", "{637FEB65-392B-45D1-BCFC-19296235CB50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZMMLDotNetCore.PizzaApi", "ZMMLDotNetCore.PizzaApi\ZMMLDotNetCore.PizzaApi.csproj", "{637FEB65-392B-45D1-BCFC-19296235CB50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZMMLDotNetCore.WinFormsAppSqlInjection", "ZMMLDotNetCore.WinFormsAppSqlInjection\ZMMLDotNetCore.WinFormsAppSqlInjection.csproj", "{9F2C5F7E-5A00-4842-B533-9BF0B7EBB25D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{637FEB65-392B-45D1-BCFC-19296235CB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{637FEB65-392B-45D1-BCFC-19296235CB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{637FEB65-392B-45D1-BCFC-19296235CB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F2C5F7E-5A00-4842-B533-9BF0B7EBB25D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2C5F7E-5A00-4842-B533-9BF0B7EBB25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2C5F7E-5A00-4842-B533-9BF0B7EBB25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2C5F7E-5A00-4842-B533-9BF0B7EBB25D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
